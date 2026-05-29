@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Shape = exports.shapeFromJSON = exports.perimeter = exports.area = exports.createTriangle = exports.Triangle = exports.createRectangle = exports.Rectangle = exports.createCircle = exports.Circle = void 0;
+exports.Shape = exports.perimeter = exports.area = exports.createTriangle = exports.Triangle = exports.createRectangle = exports.Rectangle = exports.createCircle = exports.Circle = void 0;
 var circle_1 = require("./shapes/circle");
 Object.defineProperty(exports, "Circle", { enumerable: true, get: function () { return circle_1.Circle; } });
 Object.defineProperty(exports, "createCircle", { enumerable: true, get: function () { return circle_1.createCircle; } });
@@ -13,7 +13,5 @@ Object.defineProperty(exports, "createTriangle", { enumerable: true, get: functi
 var metrics_1 = require("./api/metrics");
 Object.defineProperty(exports, "area", { enumerable: true, get: function () { return metrics_1.area; } });
 Object.defineProperty(exports, "perimeter", { enumerable: true, get: function () { return metrics_1.perimeter; } });
-var fromJSON_1 = require("./api/fromJSON");
-Object.defineProperty(exports, "shapeFromJSON", { enumerable: true, get: function () { return fromJSON_1.shapeFromJSON; } });
 var shape_1 = require("./types/shape");
 Object.defineProperty(exports, "Shape", { enumerable: true, get: function () { return shape_1.Shape; } });

@@ -1,15 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.assertShapeKind = assertShapeKind;
 exports.assertFiniteNumber = assertFiniteNumber;
 exports.assertPositive = assertPositive;
 exports.assertTriangleInequality = assertTriangleInequality;
 const DEFAULT_NUMBER_LABEL = "value";
-function assertShapeKind(json, expected) {
-    if (json.kind !== expected) {
-        throw new Error(`Expected shape kind "${expected}", got "${String(json.kind)}"`);
-    }
-}
 function assertFiniteNumber(value, label = DEFAULT_NUMBER_LABEL) {
     if (!Number.isFinite(value)) {
         throw new Error(`${label} must be a finite number`);

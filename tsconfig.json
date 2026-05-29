@@ -6,6 +6,7 @@
     "strict": true,
     "allowJs": false,
     "declaration": true,
+    "removeComments": false,
     "outDir": "dist",
     "rootDir": "src",
     "esModuleInterop": true,
